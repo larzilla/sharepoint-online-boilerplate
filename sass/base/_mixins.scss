@@ -1,0 +1,28 @@
+//Custom Sass Helpers
+//
+@mixin mq-media($query: $feature $value) {
+	@if length($query) == 1 {
+		@media screen and ($default-feature: nth($query, 1)) {
+			@content;
+		}
+	} @else {
+		$loop-to: length($query);
+		$media-query: "screen and ";
+		@if is-not(is-even(length($query))) {
+			$loop-to: $loop-to - 1;
+		}
+		$i: 1;
+		@while $1 <= $loop-to {
+			$media-query: $media-query + "(" + nth($query, $i) + ": " + nth($query, $i + 1) + ") ";
+
+			@if ($i + 1) != $loop-to {
+				$media-query: $media-query + "and ";
+			}
+
+			$i: $i + 2;
+		}
+		@media #{$media-query} {
+			@content;
+		}
+	}
+}
