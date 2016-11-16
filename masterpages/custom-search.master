@@ -8,7 +8,20 @@
 <%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/15/Welcome.ascx" %>
 <%@ Register Tagprefix="PublishingWebControls" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> 
 
-<!DOCTYPE html><SharePoint:SPHtmlTag dir="<%$Resources:wss,multipages_direction_dir_value%>" ID="SPHtmlTag" runat="server" ><head runat="server"><meta name="GENERATOR" content="Microsoft SharePoint" /><meta http-equiv="X-UA-Compatible" content="IE=10" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /><SharePoint:IECompatibleMetaTag runat="server" /><meta http-equiv="Expires" content="0" /><SharePoint:SPPinnedSiteTile runat="server" TileUrl="/_layouts/15/images/SharePointMetroAppTile.png" TileColor="#0072C6" /><SharePoint:RobotsMetaTag runat="server"/><SharePoint:PageTitle runat="server"><asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server"><SharePoint:ProjectProperty Property="Title" runat="server" /></asp:ContentPlaceHolder></SharePoint:PageTitle>
+<!DOCTYPE html>
+<SharePoint:SPHtmlTag dir="<%$Resources:wss,multipages_direction_dir_value%>" ID="SPHtmlTag" runat="server" >
+<head runat="server">
+	<meta name="GENERATOR" content="Microsoft SharePoint" />
+	<meta http-equiv="X-UA-Compatible" content="IE=10" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<SharePoint:IECompatibleMetaTag runat="server" />
+	<meta http-equiv="Expires" content="0" />
+	<SharePoint:SPPinnedSiteTile runat="server" TileUrl="/_layouts/15/images/SharePointMetroAppTile.png" TileColor="#0072C6" />
+	<SharePoint:RobotsMetaTag runat="server"/><SharePoint:PageTitle runat="server">
+	<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
+		<SharePoint:ProjectProperty Property="Title" runat="server" />
+	</asp:ContentPlaceHolder></SharePoint:PageTitle>
 
 	<SharePoint:StartScript runat="server" />
 	<SharePoint:CssLink runat="server" Version="15"/>
@@ -413,7 +426,7 @@
 
   <div class="global-footer">
     <footer>
-          Copyright &copy; <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.			
+          Copyright &copy; <script>document.write(new Date().getFullYear())</script>.
     </footer>
   </div><!--/ .global-footer -->
 </div> <!--/ #s4-workspace -->	
