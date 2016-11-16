@@ -26,6 +26,6 @@ Ensure you have the following installed on your machine before you can begin usi
 4. In the gruntfile, update the title of the styleguide under the 'kss' task options.
 5. Run the default grunt task with `grunt`
 
-##### Using the masterpages #####
+#### Using the masterpages ####
 
 A set of blank masterpages are included in this repository. These require some customization and are not ready for immediate use. Uncomment the paths to custom stylesheets, favicon, and variables file located in the header.
