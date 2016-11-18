@@ -340,13 +340,7 @@
 							<SharePoint:AjaxDelta id="DeltaPlaceHolderGroupActionsArea" BlockElement="true" CssClass="ms-floatRight ms-noWrap" runat="server">
 			                  <SharePoint:DelegateControl runat="server" ControlId="GroupActionsTop" AllowMultipleControls="true" />
 			                </SharePoint:AjaxDelta>							
-			            </div>
-			            <div class="header-actions--menu">
-			              <div data-toggle="navigation-primary" class="menutoggle ms-dialogHidden">
-					          <span class="menu-icon"></span> 
-					          <a id="simple-menu" href="#sidr">&nbsp;</a>
-					      </div> 
-			            </div>								
+			            </div>							
 				    </div><!-- / .header-actions -->	 	
             </div><!-- / .global-header-inner -->
         </div> 	<!-- / .global-header -->	       
